@@ -26,3 +26,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="ingot-user 14 UKQ1.240227.165 165 release-keys" \
     BuildFingerprint=OSOM/ingot/ingot:14/UKQ1.240227.165/165:user/release-keys \
     DeviceProduct=ingot
+
+# AOHP (Android Open Harness Project) agent harness: Driver, OpenClaw app, containerd, Debian template
+$(call inherit-product-if-exists, vendor/aohp/aohp.mk)
